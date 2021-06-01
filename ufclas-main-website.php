@@ -178,3 +178,69 @@ add_action( 'plugins_loaded', array( 'ufCLASWebsite_PageTemplater', 'get_instanc
   }
 
   add_action('wp_enqueue_scripts', 'ufCLASWebsite_public_style');
+
+
+
+/*======================================
+
+  Pulls in news from https://news.clas.ufl.edu
+
+=======================================*/
+function clasNewsFeed($atts){
+	 $currentBlogID = get_current_blog_id();
+
+	 extract( shortcode_atts( array(
+        'tag'   		 => "clas-news", //default class will be featured
+        'eventtotal' => "3", //Total of events to show per page
+				'site_id'    => ''
+      ), $atts ) );
+
+		$tp_blog_id = $site_id;
+		switch_to_blog( $tp_blog_id );
+
+	 $args = array(
+         'post_type'         =>    array('post'),
+				 'posts_per_page'		 =>    $eventtotal,
+				 'tag'  						 => 	 $tag,
+			   'orderby'					 =>		 'date',
+			   'order'						 =>    'DESC',
+	 	 );
+
+	 $output = "";
+	 $output .= "<div id='tribe-events-content' class='tribe-events-list'>";
+
+	 $query = new WP_Query($args);
+
+	 if($query->have_posts()){
+		 while($query->have_posts()){
+			 $query->the_post();
+
+			 $output .= "<h4><a href='". get_the_permalink() ."' target='_blank'>" . get_the_title() . "</a></h4>";
+
+ 			 $output .= "<p class='publish-date'>Published on " . get_the_date() . "</p>";
+
+			 $output .= "<p>" . get_the_excerpt() . "</p>";
+		 }
+
+	 $output .= "</div>";
+
+	 switch_to_blog($currentBlogID);
+
+	 $output .= "<div class='more-news'>";
+	 $output .= "<a href='https://news.clas.ufl.edu/' target='_blank'>Read More News <em class='fas fa-chevron-double-right'></em>";
+	 $output .= "</div>";
+
+	 return $output;
+
+
+
+	 }else {
+		 $output .= "There are no recent news.";
+		 return $output;
+	 }
+
+
+}
+
+add_shortcode('clas-news-feed', 'clasNewsFeed');
+
