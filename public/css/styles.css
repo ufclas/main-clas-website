@@ -1,0 +1,213 @@
+/*===========================================
+
+  Universal Styling
+
+=============================================*/
+
+#clas-home .container {
+    max-width: 1300px;
+    width: 100%;
+}
+
+#clas-home .row {
+  margin: 0;
+}
+
+#page #clas-home p,
+#page #clas-home li {
+    font-family: "Gentona_Light", sans-serif !important;
+}
+
+#clas-home li {
+    list-style: none;
+    line-height: 2.2rem;
+}
+
+#clas-home li a {
+    font-family: "Gentona_Medium", sans-serif !important;
+    font-size: 1.25rem;
+}
+
+#clas-home li:before {
+    position: relative;
+    content: "\02192";
+    color: #f04e23;
+    float: left;
+    margin: 0 0 0 -1.3rem;
+    width: 1em;
+    font-size: 1.1rem;
+    font-family: "Quadon_Bold";
+}
+
+#clas-home h3 {
+    font-family: "Gentona_ExtraBold", sans-serif;
+    color: #002346;
+    padding-bottom: 0;
+    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 120%;
+}
+
+#clas-home .desktop {
+  display: none;
+}
+
+#clas-home .col-sm-6.text-content {
+    padding: 0 1rem;
+}
+/*===========================================
+
+  Slider
+
+=============================================*/
+#clas-home .home-hero-container .home-hero-container .slideshow_container img,
+#clas-home .home-hero-container .slideshow_container.slideshow_container_style-light,
+#clas-home .home-hero-container .slideshow_content,
+#clas-home .home-hero-container .slideshow_slide.slideshow_slide_image,
+#clas-home .home-hero-container .slideshow_view.slideshow_currentView {
+    max-height: 400px;
+}
+
+#clas-home .home-hero-container h2.slideshow_title {
+    line-height: 95%;
+}
+
+#clas-home .home-hero-container .slideshow_description_box.slideshow_transparent {
+    transform: none;
+}
+
+p.slideshow_description {
+    display: none;
+}
+
+/*===========================================
+
+  CLAS Links Section Styling
+
+=============================================*/
+
+#clas-home .link-container h3 {
+    font-family: "Quadon_ExtraBold", sans-serif;
+    color: #00337A;
+    padding-bottom: 0;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.link-container h2 {
+    background: no-repeat left/cover url(../images/blue-background.jpg);
+    text-align: center;
+    color: white;
+    font-size: 1.75rem;
+    padding: 1rem 2rem;
+}
+
+.link-container ul {
+    margin: 1rem 0 0;
+}
+/*===========================================
+
+ Spotlight Section Styling
+
+=============================================*/
+.clas-spotlight-story {
+    background: #F7F4EB;
+    padding-bottom: 2rem;
+}
+
+.news-spotlight .col-sm-6 {
+    padding: 0;
+}
+
+#clas-home .news-spotlight h3 {
+    background: no-repeat center/cover url('../images/orange-background.jpg');
+    color: white;
+    padding: 1rem;
+}
+
+.col-md-6.spotlight-image {
+    padding: 0;
+}
+
+.news-spotlight .col-md-6 img {
+    min-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.news-spotlight h4 {
+    font-family: "Quadon_Bold", sans-serif;
+    font-size: 1.25rem;
+    color: #00337A;
+    margin-top: 1rem !important;
+    padding: 0 .5rem 1rem 0;
+}
+
+
+/*===========================================
+
+ In The News/Events Styling
+
+=============================================*/
+.news-events .container {
+    padding: 0;
+}
+
+#clas-home article:first-child {
+    padding-top: 1rem;
+}
+
+#clas-home article {
+    border-bottom: 2px dashed #707070;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#clas-home article:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+#clas-home .featured-news a {
+    font-family: "Quadon_Bold", sans-serif !important;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.news-events h4 {
+    padding-bottom: 0;
+}
+
+p.publish-date {
+    padding: 0 0 .5rem;
+}
+
+#clas-home .more-news a,
+#clas-home .other-information a {
+    font-size: 1.25rem;
+    font-family: "Gentona_SemiBold", sans-serif !important;
+}
+
+/*===========================================
+
+ Bottom Blocks Styling
+
+=============================================*/
+#clas-home .other-information .row > div {
+  padding: 0;
+}
+
+#clas-home .other-information h3 {
+  margin-top: 0;
+}
+
+.other-information {
+    margin-top: 3.75rem;
+    margin-bottom: 3rem;
+}
+
+
+.bottom-blocks {
+    margin-top: 1.375rem;
+}
