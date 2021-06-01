@@ -46,6 +46,11 @@
     margin-top: 1rem;
     font-size: 2rem;
     line-height: 120%;
+    margin-left: 0;
+}
+
+#clas-home .col-md-6 p {
+    padding: .3rem 0;
 }
 
 #clas-home .desktop {
@@ -177,6 +182,7 @@ p.slideshow_description {
 
 .news-events h4 {
     padding-bottom: 0;
+    margin-left: 0 !important;
 }
 
 p.publish-date {
@@ -184,7 +190,8 @@ p.publish-date {
 }
 
 #clas-home .more-news a,
-#clas-home .other-information a {
+#clas-home .other-information a,
+#clas-home .upcoming-events .tribe-events-widget-link a {
     font-size: 1.25rem;
     font-family: "Gentona_SemiBold", sans-serif !important;
 }
@@ -210,4 +217,62 @@ p.publish-date {
 
 .bottom-blocks {
     margin-top: 1.375rem;
+}
+
+.other-information img {
+    width: 100%;
+}
+
+/*===========================================
+
+ Media Queries
+
+=============================================*/
+@media(min-width: 768px) {
+  #clas-home .container {
+    padding: 0;
+  }
+
+  .link-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto !important;
+  }
+
+  .link-container h2 {
+    font-size: 2.25rem;
+  }
+
+  .link-container .row > div {
+      flex: 1 50%;
+  }
+
+  .news-spotlight {
+    margin-top: 2.5rem;
+  }
+
+  .col-md-6.text-content,
+  .news-events,
+  .other-information {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  #clas-home .news-spotlight h3 {
+    padding: 1rem 1.5rem;
+  }
+
+  .news-spotlight h4 {
+    font-size: 1.5rem;
+  }
+
+  .bottom-blocks {
+    margin-top: 3rem;
+  }
+
+  .other-information{
+    margin-bottom: 3rem;
+  }
+
 }
