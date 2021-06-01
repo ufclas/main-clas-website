@@ -244,3 +244,52 @@ function clasNewsFeed($atts){
 
 add_shortcode('clas-news-feed', 'clasNewsFeed');
 
+/*===========================
+*
+*
+* Register widget areas
+*
+*
+*=============================*/
+function ufCLASwidgets(){
+	register_sidebar( array(
+		'name'          => ('CLAS News Spotlight'),
+		'id'            => 'clas-news-spotlight',
+		'description'   => 'Section for faculty/staff/news spotlight',
+		'before_widget' => '<div class="clas-spotlight-story">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+
+  register_sidebar( array(
+    'name'          => ('CLAS News Feed'),
+    'id'            => 'clas-news-feed',
+    'description'   => 'Shortcode for News Feed goes here',
+    'before_widget' => '<div class="clas-featured-stories">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
+  ));
+
+  register_sidebar( array(
+    'name'          => ('CLAS Events'),
+    'id'            => 'clas-events',
+    'description'   => 'Upcoming Events',
+    'before_widget' => '<div class="upcoming-events">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
+  ));
+
+	register_sidebar( array(
+    'name'          => ('CLAS Bottom Blocks'),
+    'id'            => 'clas-bottom-blocks',
+    'description'   => 'The three blocks that show up on the CLAS home page',
+    'before_widget' => '<div class="bottom-blocks">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ));
+}
+add_action('widgets_init', 'ufCLASwidgets');
