@@ -14,13 +14,15 @@
 }
 
 #page #clas-home p,
-#page #clas-home li {
+#page #clas-home li{
     font-family: "Gentona_Light", sans-serif !important;
+
 }
 
 #clas-home li {
-    list-style: none;
-    line-height: 2.2rem;
+  list-style: none;
+  line-height: 150%;
+  padding: 0 0 10px;
 }
 
 #clas-home li a {
@@ -60,31 +62,73 @@
 #clas-home .col-sm-6.text-content {
     padding: 0 1rem;
 }
+
+em.fas.fa-chevron-double-right {
+  font-size: 1rem;
+}
+
 /*===========================================
 
   Slider
 
 =============================================*/
-#clas-home .home-hero-container .home-hero-container .slideshow_container img,
-#clas-home .home-hero-container .slideshow_container.slideshow_container_style-light,
-#clas-home .home-hero-container .slideshow_content,
-#clas-home .home-hero-container .slideshow_slide.slideshow_slide_image,
-#clas-home .home-hero-container .slideshow_view.slideshow_currentView {
-    max-height: 400px;
+#clas-home .carousel-wrap {
+    max-width: 100%;
 }
 
-#clas-home .home-hero-container h2.slideshow_title {
-    line-height: 95%;
+main.carousel-row {
+    padding: 0;
 }
 
-#clas-home .home-hero-container .slideshow_description_box.slideshow_transparent {
-    transform: none;
+#clas-home .slide-image {
+  display: block;
 }
 
-p.slideshow_description {
-    display: none;
+#page #clas-home .carousel-control span {
+    font-size: 1.5rem!important;
 }
 
+#clas-home #featured-carousel .half-image-feature .carousel-caption {
+    background: transparent !important;
+    top: initial;
+    bottom: 0;
+    padding: 0 2rem;
+    height: auto;
+    text-align: left;
+}
+
+
+#clas-home #featured-carousel .item.full-image-feature,
+#clas-home #featured-carousel .item.half-image-feature {
+    width: 100%;
+    height: 460px;
+}
+
+#clas-home #featured-carousel .item.half-image-feature img {
+    width: 100% !important;
+    height: 460px;
+    object-fit: cover;
+}
+
+#clas-home .carousel-inner .item:before {
+    content: '';
+    background-image: linear-gradient(to top, black, transparent);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 3;
+}
+
+#clas-home .carousel-inner.row h3, .carousel-inner.row a {
+    line-height: 120% !important;
+}
+
+#clas-home p.link-more a.more-link {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
 /*===========================================
 
   CLAS Links Section Styling
@@ -109,6 +153,7 @@ p.slideshow_description {
 
 .link-container ul {
     margin: 1rem 0 0;
+    padding-left: 1rem;
 }
 /*===========================================
 
@@ -196,6 +241,41 @@ p.publish-date {
     font-family: "Gentona_SemiBold", sans-serif !important;
 }
 
+ol.tribe-list-widget li:before {
+    display: none;
+}
+
+#clas-home ol.tribe-list-widget {
+    padding: 0;
+}
+
+#clas-home .tribe-events-list-widget .event-date {
+    position: static;
+    display: flex;
+    margin-bottom: 0.5rem !important;
+}
+
+#clas-home .tribe-events-list-widget .tribe-events-widget-link {
+    text-transform: capitalize;
+}
+
+
+#clas-home .tribe-events-list-widget .tribe-list-widget li {
+    margin-left: 0;
+    border: none;
+    padding-left: 0;
+}
+
+#clas-home .event-date > span {
+    margin-right: .5rem;
+    font-size: 1.75rem !important;
+}
+
+#page #clas-home h4.tribe-event-title a {
+    font-family: "Quadon_Bold",sans-serif !important;
+    font-size: 1.2rem !important;
+}
+
 /*===========================================
 
  Bottom Blocks Styling
@@ -233,6 +313,11 @@ p.publish-date {
     padding: 0;
   }
 
+  #clas-home #featured-carousel .half-image-feature .carousel-caption {
+      width: 70%;
+      left: 45px;
+  }
+
   .link-container .row {
     display: flex;
     flex-wrap: wrap;
@@ -248,8 +333,16 @@ p.publish-date {
       flex: 1 50%;
   }
 
+  #clas-home h3 {
+    margin-top: 0;
+  }
+
   .news-spotlight {
     margin-top: 2.5rem;
+  }
+
+  .clas-spotlight-story {
+    display: inline-block;
   }
 
   .col-md-6.text-content,
@@ -267,6 +360,42 @@ p.publish-date {
     font-size: 1.5rem;
   }
 
+  .news-events .col-md-6 {
+    margin-top: 3rem;
+  }
+
+  #clas-home .tribe-events-list-widget .tribe-list-widget li {
+    position: relative;
+    margin-left: 55px;
+    padding-left: 10px;
+    border-left: 1px solid #ccc;
+    margin-bottom: 2rem;
+  }
+
+  #clas-home .tribe-events-list-widget .event-date {
+    position: absolute;
+    display: initial;
+    left: -55px;
+    top: -8px;
+  }
+
+  #clas-home .event-date > span {
+    margin-right: 0;
+  }
+
+  #clas-home span.event-day {
+    margin-top: -9px !important;
+    display: block;
+  }
+
+  #page #clas-home h4.tribe-event-title a {
+    font-size: 1.5rem;
+  }
+
+  .tribe-event-duration span {
+    font-size: 1.2rem;
+  }
+
   .bottom-blocks {
     margin-top: 3rem;
   }
@@ -275,4 +404,111 @@ p.publish-date {
     margin-bottom: 3rem;
   }
 
+}
+
+@media (min-width: 992px){
+  #clas-home .col-md-5,
+  #clas-home .col-md-6,
+  #clas-home .col-md-7 {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (min-width: 1025px){
+  #clas-home {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  #clas-home .col-md-5 {
+    width: 41.66666667%;
+  }
+
+  #clas-home .col-md-6 {
+    width: 50%;
+  }
+
+  #clas-home .col-md-7 {
+    width: 58.33333333%;
+  }
+
+  #clas-home .col-md-6,
+  #clas-home .col-md-5,
+  #clas-home .col-md-7 {
+    float: left;
+  }
+
+  #clas-home #featured-carousel .half-image-feature .carousel-caption {
+      width: 100%;
+      background: transparent !important;
+      z-index: 9;
+      max-width: 50%;
+      bottom: 45px;
+  }
+
+  .link-container .row > div {
+    flex:1 25%;
+  }
+
+  .clas-spotlight-story {
+    padding-bottom: 0;
+  }
+
+  .news-spotlight {
+    max-width: 1920px;
+    margin: 2.5rem auto;
+  }
+
+  .news-spotlight .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .news-spotlight .col-md-6.text-content {
+    padding: 1rem 2.75rem;
+  }
+
+  .news-spotlight .row h3 {
+    flex: 1 100%;
+  }
+
+  .news-spotlight .row > div {
+    flex: 1 50%;
+  }
+
+  .news-spotlight .col-md-6 img {
+    height: 100%;
+  }
+
+  .col-md-6.text-content,
+  .news-events,
+  .other-information {
+    max-width: 1300px;
+  }
+
+  #clas-home .news-events .col-md-6 {
+    padding: 0 3rem;
+    margin-top: 0;
+  }
+
+  p.tribe-events-widget-link a {
+    font-size: 1.25rem;
+  }
+
+  .bottom-blocks {
+    display: inline-block;
+  }
+
+  .bottom-blocks:first-child {
+    margin-top: 5rem;
+  }
+
+  #clas-home .other-information .row > div {
+      padding: 0 1rem;
+  }
+
+  #clas-home .other-information h3 {
+    padding-top: 0;
+  }
 }
