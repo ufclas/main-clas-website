@@ -207,7 +207,7 @@ function clasNewsFeed($atts){
 	 	 );
 
 	 $output = "";
-	 $output .= "<div id='tribe-events-content' class='tribe-events-list'>";
+	 $output .= "<div class='featured-news'>";
 
 	 $query = new WP_Query($args);
 
@@ -215,11 +215,13 @@ function clasNewsFeed($atts){
 		 while($query->have_posts()){
 			 $query->the_post();
 
+			 $output .="<article>";
 			 $output .= "<h4><a href='". get_the_permalink() ."' target='_blank'>" . get_the_title() . "</a></h4>";
 
  			 $output .= "<p class='publish-date'>Published on " . get_the_date() . "</p>";
 
 			 $output .= "<p>" . get_the_excerpt() . "</p>";
+			 $output .= "</article>";
 		 }
 
 	 $output .= "</div>";
@@ -227,7 +229,7 @@ function clasNewsFeed($atts){
 	 switch_to_blog($currentBlogID);
 
 	 $output .= "<div class='more-news'>";
-	 $output .= "<a href='https://news.clas.ufl.edu/' target='_blank'>Read More News <em class='fas fa-chevron-double-right'></em>";
+	 $output .= "<a href='https://news.clas.ufl.edu/' target='_blank'>Read More News <em class='fas fa-chevron-double-right'></em></a>";
 	 $output .= "</div>";
 
 	 return $output;
@@ -276,7 +278,7 @@ function ufCLASwidgets(){
     'name'          => ('CLAS Events'),
     'id'            => 'clas-events',
     'description'   => 'Upcoming Events',
-    'before_widget' => '<div class="upcoming-events">',
+    'before_widget' => '<div class="tribe-events-list-widget">',
     'after_widget'  => '</div>',
     'before_title'  => '<h4>',
     'after_title'   => '</h4>'
