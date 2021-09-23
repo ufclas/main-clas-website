@@ -3,7 +3,7 @@
  * Plugin Name: UFCLAS Main Website
  * Plugin URI: https://clas.ufl.edu
  * Description: This plugin is for custom functionality for the main CLAS website
- * Version: 1.0
+ * Version: 1.1
  * Author: Efren Vasquez
  * Author URI: https://mediaservices.clas.ufl.edu
  */
