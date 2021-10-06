@@ -69,6 +69,70 @@ em.fas.fa-chevron-double-right {
 }
 
 
+/*===========================================
+
+  Featured Image
+
+=============================================*/
+
+.page-template-ufclas-main-website-interior div#content {
+position: relative;
+}
+
+
+
+.page-template-ufclas-main-website-interior .container {
+position: relative;
+}
+
+
+
+.page-template-ufclas-main-website-interior main.single-featured-image-header {
+z-index: 1;
+position: absolute;
+}
+
+
+
+.page-template-ufclas-main-website-interior main#clas-home {
+z-index: 2;
+position: relative;
+}
+
+
+
+.page-template-ufclas-main-website-interior main.single-featured-image-header img {
+max-width: 100%;
+height: 400px;
+padding: 0;
+margin: 0;
+}
+
+
+
+.page-template-ufclas-main-website-interior h2.entry-title-interior {
+background: none;
+font-family: "Gentona_Bold", sans-serif;
+font-size: 54px;
+position: relative;
+height: 400px;
+display: flex;
+flex-wrap: wrap;
+align-items: end;
+width: 80%;
+line-height: 1;
+text-transform: uppercase;
+max-width: 80%;
+margin: 0 auto !important;
+}
+
+
+
+.page-template-ufclas-main-website-interior span.interior-h2 {
+width: 50%;
+text-align: left;
+}
+
 
 /*===========================================
 
@@ -312,72 +376,6 @@ ol.tribe-list-widget li:before {
 
 =============================================*/
 @media(min-width: 768px) {
-
-  /*===========================================
-
-    Featured Image
-
-  =============================================*/
-
-  div#content {
-  position: relative;
-  }
-
-
-
-  .container {
-  position: relative;
-  }
-
-
-
-  main.single-featured-image-header {
-  z-index: 1;
-  position: absolute;
-  }
-
-
-
-  main#clas-home {
-  z-index: 2;
-  position: relative;
-  }
-
-
-
-  main.single-featured-image-header img {
-  max-width: 100%;
-  height: 400px;
-  padding: 0;
-  margin: 0;
-  }
-
-
-
-  h2.entry-title-interior {
-  background: none;
-  font-family: "Gentona_Bold", sans-serif;
-  font-size: 54px;
-  position: relative;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: end;
-  width: 80%;
-  line-height: 1;
-  text-transform: uppercase;
-  max-width: 80%;
-  margin: 0 auto !important;
-  }
-
-
-
-  span.interior-h2 {
-  width: 50%;
-  text-align: left;
-  }
-
-  
   #clas-home .container {
     padding: 0;
   }
