@@ -14,7 +14,7 @@
 	clasHeroImage();
 ?>
 
-<main id="clas-interior">
+<main id="clas-main">
   <section class="link-container">
     <div class="container">
       <?php

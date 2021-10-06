@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-<main id="clas-home">
+<main id="clas-main">
 	<?php
 	//Gets settings from the customizer
 
