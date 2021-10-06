@@ -25,12 +25,12 @@
   padding: 0 0 10px;
 }
 
-#clas-home li a {
+#clas-home li a, #clas-interior li a {
     font-family: "Gentona_Medium", sans-serif !important;
     font-size: 1.25rem;
 }
 
-#clas-home li:before {
+#clas-home li:before, #clas-interior li:before {
     position: relative;
     content: "\02192";
     color: #f04e23;
