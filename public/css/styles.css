@@ -70,6 +70,58 @@ em.fas.fa-chevron-double-right {
 
 /*===========================================
 
+  Featured Image
+
+=============================================*/
+
+div#content {
+position: relative;
+}
+
+.container {
+position: relative;
+}
+
+main.single-featured-image-header {
+z-index: 1;
+position: absolute;
+}
+
+main#clas-home {
+z-index: 2;
+position: relative;
+}
+
+main.single-featured-image-header img {
+max-width: 100%;
+height: 400px;
+padding: 0;
+margin: 0;
+}
+
+h2.entry-title-interior {
+background: none;
+font-family: "Gentona_Bold", sans-serif;
+font-size: 54px;
+position: relative;
+height: 400px;
+display: flex;
+flex-wrap: wrap;
+align-items: end;
+width: 80%;
+line-height: 1;
+text-transform: uppercase;
+max-width: 80%;
+margin: 0 auto !important;
+}
+
+span.interior-h2 {
+width: 50%;
+text-align: left;
+}
+
+/*===========================================
+
   Slider
 
 =============================================*/
