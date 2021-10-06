@@ -15,17 +15,19 @@
 ?>
 
 <main id="clas-interior">
-  <div class="container">
-    <?php
-      if(have_posts()){
-        while(have_posts()){
-          the_post();
+  <section class="link-container">
+    <div class="container">
+      <?php
+        if(have_posts()){
+          while(have_posts()){
+            the_post();
 
-          the_content();
+            the_content();
+          }
         }
-      }
-    ?>
-  </div>
+      ?>
+    </div><!-- container -->
+  </section>
 </main>
 
 <?php
