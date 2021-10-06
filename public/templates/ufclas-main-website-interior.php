@@ -20,7 +20,7 @@
       <?php
         if(have_posts()){
           while(have_posts()){?>
-            <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+            <?php the_title( '<h2 class="entry-title-interior">', '</h2>' ); ?>
             <?php
             the_post();
             the_content();
