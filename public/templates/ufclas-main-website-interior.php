@@ -19,11 +19,10 @@
     <div class="container">
       <?php
         if(have_posts()){
-          while(have_posts()){
+          while(have_posts()){?>
+            <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+            <?php
             the_post();
-
-            the_title();
-
             the_content();
           }
         }
