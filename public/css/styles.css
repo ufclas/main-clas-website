@@ -78,19 +78,27 @@ div#content {
 position: relative;
 }
 
+
+
 .container {
 position: relative;
 }
+
+
 
 main.single-featured-image-header {
 z-index: 1;
 position: absolute;
 }
 
+
+
 main#clas-home {
 z-index: 2;
 position: relative;
 }
+
+
 
 main.single-featured-image-header img {
 max-width: 100%;
@@ -98,6 +106,8 @@ height: 400px;
 padding: 0;
 margin: 0;
 }
+
+
 
 h2.entry-title-interior {
 background: none;
@@ -114,6 +124,8 @@ text-transform: uppercase;
 max-width: 80%;
 margin: 0 auto !important;
 }
+
+
 
 span.interior-h2 {
 width: 50%;
