@@ -4,22 +4,23 @@
 
 =============================================*/
 
-#clas-home .container {
+#clas-home .container, #clas-interior .container {
     max-width: 1300px;
     width: 100%;
 }
 
-#clas-home .row {
+#clas-home .row, #clas-interior .row  {
   margin: 0;
 }
 
 #page #clas-home p,
-#page #clas-home li{
+#page #clas-home li, #page #clas-interior p,
+#page #clas-interior li {
     font-family: "Gentona_Light", sans-serif !important;
 
 }
 
-#clas-home li {
+#clas-home li, #clas-interior li {
   list-style: none;
   line-height: 150%;
   padding: 0 0 10px;
@@ -41,7 +42,7 @@
     font-family: "Quadon_Bold";
 }
 
-#clas-home h3 {
+#clas-home h3, #clas-interior h3 {
     font-family: "Gentona_ExtraBold", sans-serif;
     color: #002346;
     padding-bottom: 0;
@@ -51,15 +52,15 @@
     margin-left: 0;
 }
 
-#clas-home .col-md-6 p {
+#clas-home .col-md-6 p, #clas-interior .col-md-6 p {
     padding: .3rem 0;
 }
 
-#clas-home .desktop {
+#clas-home .desktop, #clas-interior .desktop {
   display: none;
 }
 
-#clas-home .col-sm-6.text-content {
+#clas-home .col-sm-6.text-content, #clas-interior .col-sm-6.text-content {
     padding: 0 1rem;
 }
 
