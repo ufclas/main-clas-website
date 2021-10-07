@@ -471,6 +471,10 @@ ol.tribe-list-widget li:before {
     margin-bottom: 3rem;
   }
 
+  .page-template-ufclas-main-website-interior h2.entry-title-interior {
+    font-size: 35px;
+  }
+
 }
 
 @media (min-width: 992px){
@@ -479,6 +483,10 @@ ol.tribe-list-widget li:before {
   #clas-home .col-md-7 {
     width: 100%;
     float: none;
+  }
+
+  .page-template-ufclas-main-website-interior h2.entry-title-interior {
+    font-size: 45px;
   }
 }
 
