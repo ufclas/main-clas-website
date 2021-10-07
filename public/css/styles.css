@@ -375,7 +375,15 @@ ol.tribe-list-widget li:before {
  Media Queries
 
 =============================================*/
-@media(min-width: 768px) {
+@media (max-width: 768px) {
+  .page-template-ufclas-main-website-interior h2.entry-title-interior {
+    font-size: 30px;
+  }
+}
+
+
+
+@media (min-width: 768px) {
   #clas-home .container {
     padding: 0;
   }
@@ -470,11 +478,6 @@ ol.tribe-list-widget li:before {
   .other-information{
     margin-bottom: 3rem;
   }
-
-  .page-template-ufclas-main-website-interior h2.entry-title-interior {
-    font-size: 35px;
-  }
-
 }
 
 @media (min-width: 992px){
@@ -483,10 +486,6 @@ ol.tribe-list-widget li:before {
   #clas-home .col-md-7 {
     width: 100%;
     float: none;
-  }
-
-  .page-template-ufclas-main-website-interior h2.entry-title-interior {
-    font-size: 45px;
   }
 }
 
