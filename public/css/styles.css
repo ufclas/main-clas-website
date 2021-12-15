@@ -292,9 +292,10 @@ p.publish-date {
 
 #clas-home .more-news a,
 #clas-home .other-information a,
-#clas-home .upcoming-events .tribe-events-widget-link a {
+#clas-home .tribe-events-widget-link a {
     font-size: 1.25rem;
     font-family: "Gentona_SemiBold", sans-serif !important;
+    letter-spacing: 0;
 }
 
 ol.tribe-list-widget li:before {
@@ -457,10 +458,10 @@ ol.tribe-list-widget li:before {
   }
 
   #clas-home span.event-day {
-    margin-top: -9px !important;
+    margin-top: -3px !important;
     display: block;
+    font-family: "Gentona_Light", "Georgia", serif;
   }
-
   #page #clas-home h4.tribe-event-title a {
     font-size: 1.5rem;
   }
