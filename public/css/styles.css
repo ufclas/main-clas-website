@@ -494,7 +494,7 @@ ol.tribe-list-widget li:before {
     margin: 0 auto;
     background-color: white;
   }
-  .page-template-ufclas-main-website-home#content {
+  .page-template-ufclas-main-website-home #content {
       background: #f7f4eb url(../images/bg-texture.png);
   }
   #clas-home .col-md-5 {
