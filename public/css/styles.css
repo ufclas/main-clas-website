@@ -493,7 +493,7 @@ ol.tribe-list-widget li:before {
     max-width: 1920px;
     margin: 0 auto;
   }
-  .page-template-ufclas-main-website-home clas-home {
+  .page-template-ufclas-main-website-home #clas-home {
     background-color: white;
   }
   .page-template-ufclas-main-website-home #content {
