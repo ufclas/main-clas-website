@@ -20,6 +20,10 @@
 
 }
 
+#page #clas-home .carousel-caption p {
+    font-family: "Gentona_Medium", sans-serif !important;
+}
+
 #clas-home li, #clas-interior li {
   list-style: none;
   line-height: 150%;
@@ -166,7 +170,7 @@ main.carousel-row {
     object-fit: cover;
 }
 
-#clas-home .carousel-inner .item:before {
+/*#clas-home .carousel-inner .item:before {
     content: '';
     background-image: linear-gradient(to top, black, transparent);
     top: 0;
@@ -175,7 +179,7 @@ main.carousel-row {
     bottom: 0;
     position: absolute;
     z-index: 3;
-}
+}*/
 
 #clas-home .carousel-inner.row h3, .carousel-inner.row a {
     line-height: 120% !important;
